@@ -1,0 +1,26 @@
+{
+    "env": {
+      "APP_SECRET": {
+        "description": "A secret key for Symfony",
+        "generator": "secret"
+      },
+      "APP_ENV": {
+        "description": "A APP_ENV key for Symfony",
+        "value": "prod"
+      },
+      "MAILER_DSN": {
+        "description": "A MAILER_DSN key for Symfony",
+        "value": "smtp://localhost"
+      }
+    },
+    "addons": [
+      {
+        "plan": "heroku-postgresql"
+      }
+    ],
+    "buildpacks": [
+      {
+        "url": "heroku/php"
+      }
+    ]
+  }
