@@ -14,7 +14,7 @@
       }
     },
     "scripts": {
-      "postdeploy": "bundle exec php bin/console doctrine:fixtures:load"
+      "postdeploy": "php bin/console doctrine:fixtures:load"
     },
     "addons": [
       {
