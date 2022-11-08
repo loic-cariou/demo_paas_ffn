@@ -14,7 +14,7 @@
       }
     },
     "scripts": {
-      "postdeploy": "bin/console doctrine:migrations:migrate && bin/console doctrine:fixtures:load"
+      "postdeploy": "bin/console doctrine:fixtures:load -n"
     },
     "addons": [
       {
